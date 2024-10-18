@@ -32,11 +32,10 @@ class Color():
         '-1': ''
         
     }
-    def __init__(self):
-        print(
-        f'This module designet for printin your text woth color.\nYou can use method info() from Color object to see avaliable colors and text styles.Based on ANSI-codes.\n'
-        
-        )
+    def __init__(self, ignore=False):
+        if not(ignore): print(
+            f'This module designet for printin your text woth color.\nYou can use method info() from Color object to see avaliable colors and text styles.Based on ANSI-codes.\n'
+            )
         
     def info(self):
         print(
